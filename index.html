@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, rgba(30, 18, 207, 0), rgb(2, 0, 131));
+        }
+        .container{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 400px;
+            gap: 10px;
+            justify-content: center;
+            margin: auto;
+        }
+        input{
+            height: 50px;
+            border-radius: 35px;
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            border-style: groove;
+        }
+        table,th,td{
+            border: 1px solid white;
+        }
+        table{
+            margin: auto;
+        }
+        th,td{
+            width: 100px;
+            color: white    ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <input type="text" id="text" placeholder="Enter Name..."><br>
+        <input type="password" id="password" placeholder="Enter Password...">
+        <input type="submit" id="submit">
+    </div>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Password</th>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+    <script src="./script.js"></script>
+</body>
+
+</html>
